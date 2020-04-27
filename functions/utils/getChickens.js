@@ -14,7 +14,7 @@ function daysSinceEpoch(day) {
 }
 
 const potentialChickens = [
-  { id: "U0286USDZ", name: "riley" },
+  { id: "U0286USDZ", name: "riley", team: "apollo" },
   { id: "U027CLUME", name: "gstamp", team: "mercury" },
   { id: "U0A51Q7E2", name: "lucas", team: "mercury" },
   { id: "U02DERN4E", name: "khayman", team: "artemis" },
@@ -34,7 +34,7 @@ const potentialChickens = [
   { id: "UEAR25K88", name: "amanda.varella", team: "artemis" },
   { id: "UF72FC073", name: "Viv", team: "apollo" },
   { id: "UGP1W254P", name: "jason.jun", team: "juno" },
-  { id: "UGWEUTNH5", name: "Izzy", team: "apollo" },
+  { id: "UGWEUTNH5", name: "Izzy", team: "athena" },
   { id: "U0ZFZGJVA", name: "ray.grasso" },
   { id: "U025K202K", name: "notahat", team: "mercury" },
   { id: "U932TDX9V", name: "paul", team: "gemini" },
