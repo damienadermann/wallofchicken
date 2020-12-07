@@ -20,19 +20,19 @@ const potentialChickens = [
   { id: "U02DERN4E", name: "khayman", team: "artemis" },
   { id: "U0274DF37", name: "asellitt", team: "artemis" },
   { id: "U0K8Z1KD1", name: "kelle", team: "juno" },
-  { id: "U44G2GD4M", name: "damien.adermann", team: "apollo" },
+  { id: "U44G2GD4M", name: "damien.adermann", team: "discover" },
   { id: "UFM0UL2GG", name: "claire.grooby", team: "juno" },
-  { id: "U07271PS5", name: "prasanna.joshi", team: "apollo" },
-  { id: "U0G1LM222", name: "stacey" , team: "apollo"},
+  { id: "U07271PS5", name: "prasanna.joshi", team: "discover" },
+  { id: "U0G1LM222", name: "stacey" , team: "discover"},
   { id: "U1SG7A284", name: "bakes", team: "mercury" },
   { id: "UDWHM1JTZ", name: "riana.ferreira", team: "artemis" },
   { id: "U029C4B5Z", name: "mario", team: "juno" },
-  { id: "U02PS4KKA", name: "bordo", team: "apollo" },
+  { id: "U02PS4KKA", name: "bordo", team: "discover" },
   { id: "UD8UGSBMZ", name: "ben.vilnis", team: "gemini" },
   { id: "U5G7D3MK7", name: "grant.tibbey", team: "gemini" },
   { id: "UDWR5TJLR", name: "ali.graham", team: "gemini" },
   { id: "UEAR25K88", name: "amanda.varella", team: "artemis" },
-  { id: "UF72FC073", name: "Viv", team: "apollo" },
+  { id: "UF72FC073", name: "Viv", team: "discover" },
   { id: "UGP1W254P", name: "jason.jun", team: "juno" },
   { id: "UGWEUTNH5", name: "Izzy", team: "athena" },
   { id: "U0ZFZGJVA", name: "ray.grasso" },
@@ -44,7 +44,7 @@ const potentialChickens = [
   { id: "U8N6Y5HBQ", name: "simon.wade", team: "athena" },
   { id: "UDJU1AL0K", name: "zoltan.toth", team: "athena" },
   { id: "U8G3NFUMD", name: "emily.koop", team: "athena"  },
-  { id: "U0F58P3DJ", name: "fraserxu", team: "apollo" }
+  { id: "U0F58P3DJ", name: "fraserxu", team: "discover" }
 ]
 
 function getChickens(day, team) {
