@@ -18,7 +18,7 @@ const typeDefs = gql`
   enum Team {
     Elements
     Artemis
-    Apollo
+    Discover
     Gemini
     Mercury
     Thrive
