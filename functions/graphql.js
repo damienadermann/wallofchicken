@@ -22,6 +22,7 @@ const typeDefs = gql`
     Gemini
     Mercury
     Thrive
+    Experience
   }
 
   type Query {
