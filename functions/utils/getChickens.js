@@ -14,32 +14,32 @@ function daysSinceEpoch(day) {
 }
 
 const potentialChickens = [
-  { id: "U0286USDZ", name: "riley", team: "juno" },
   { id: "U027CLUME", name: "gstamp", team: "mercury" },
   { id: "U02DERN4E", name: "khayman", team: "artemis" },
   { id: "U0274DF37", name: "asellitt", team: "artemis" },
-  { id: "U0K8Z1KD1", name: "kelle", team: "juno" },
   { id: "U44G2GD4M", name: "Heidi.k", team: "discover" },
-  { id: "UFM0UL2GG", name: "claire.grooby", team: "juno" },
   { id: "U07271PS5", name: "prasanna.joshi", team: "discover" },
   { id: "U0G1LM222", name: "stacey" , team: "discover"},
   { id: "U1SG7A284", name: "bakes", team: "mercury" },
   { id: "UDWHM1JTZ", name: "riana.ferreira", team: "artemis" },
-  { id: "U029C4B5Z", name: "mario", team: "juno" },
   { id: "U02PS4KKA", name: "bordo", team: "discover" },
   { id: "U5G7D3MK7", name: "grant.tibbey", team: "gemini" },
   { id: "UDWR5TJLR", name: "ali.graham", team: "gemini" },
   { id: "UEAR25K88", name: "amanda.varella", team: "artemis" },
   { id: "UF72FC073", name: "Viv", team: "discover" },
-  { id: "UGP1W254P", name: "jason.jun", team: "juno" },
-  { id: "UGWEUTNH5", name: "Izzy", team: "athena" },
   { id: "U025K202K", name: "notahat", team: "mercury" },
   { id: "UCU3DM9C1", name: "brendan.obrien", team: "athena" },
   { id: "U9NRV08SZ", name: "daniel.budden", team: "athena" },
   { id: "U639C9S0H", name: "oliver.diestel", team: "athena" },
   { id: "UDJU1AL0K", name: "zoltan.toth", team: "athena" },
   { id: "U8G3NFUMD", name: "emily.koop", team: "athena"  },
-  { id: "U0F58P3DJ", name: "fraserxu", team: "discover" }
+  { id: "U0F58P3DJ", name: "fraserxu", team: "discover" },
+  { id: "U0286USDZ", name: "riley", team: "experience" },
+  { id: "U0K8Z1KD1", name: "kelle", team: "experience" },
+  { id: "UFM0UL2GG", name: "claire.grooby", team: "experience" },
+  { id: "U029C4B5Z", name: "mario", team: "experience" },
+  { id: "UGWEUTNH5", name: "Izzy", team: "experience" },
+  { id: "U15HUNCRJ", name: "Sam McKenna (Tue-Fri)", team: "experience" }
 ]
 
 function getChickens(day, team) {
