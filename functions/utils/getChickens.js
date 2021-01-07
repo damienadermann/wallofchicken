@@ -18,7 +18,7 @@ const potentialChickens = [
   { id: "U02DERN4E", name: "khayman", team: "artemis" },
   { id: "U0274DF37", name: "asellitt", team: "artemis" },
   { id: "U44G2GD4M", name: "Heidi.k", team: "discover" },
-  { id: "U07271PS5", name: "prasanna.joshi", team: "discover" },
+  { id: "U07271PS5", name: "prasanna", team: "discover" },
   { id: "U0G1LM222", name: "stacey" , team: "athena"},
   { id: "U1SG7A284", name: "bakes", team: "mercury" },
   { id: "UDWHM1JTZ", name: "riana.ferreira", team: "artemis" },
