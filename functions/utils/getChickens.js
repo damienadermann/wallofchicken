@@ -18,8 +18,8 @@ const potentialChickens = [
   { id: "U02DERN4E", name: "khayman", team: "artemis" },
   { id: "U0274DF37", name: "asellitt", team: "artemis" },
   { id: "U44G2GD4M", name: "Heidi.k", team: "discover" },
-  { id: "U07271PS5", name: "prasanna.joshi", team: "discover" },
-  { id: "U0G1LM222", name: "stacey" , team: "discover"},
+  { id: "U07271PS5", name: "prasanna", team: "discover" },
+  { id: "U0G1LM222", name: "stacey" , team: "athena"},
   { id: "U1SG7A284", name: "bakes", team: "mercury" },
   { id: "UDWHM1JTZ", name: "riana.ferreira", team: "artemis" },
   { id: "U02PS4KKA", name: "bordo", team: "discover" },
@@ -28,7 +28,6 @@ const potentialChickens = [
   { id: "UEAR25K88", name: "amanda.varella", team: "artemis" },
   { id: "UF72FC073", name: "Viv", team: "discover" },
   { id: "U025K202K", name: "notahat", team: "mercury" },
-  { id: "UCU3DM9C1", name: "brendan.obrien", team: "athena" },
   { id: "U9NRV08SZ", name: "daniel.budden", team: "athena" },
   { id: "U639C9S0H", name: "oliver.diestel", team: "athena" },
   { id: "UDJU1AL0K", name: "zoltan.toth", team: "athena" },
@@ -39,7 +38,8 @@ const potentialChickens = [
   { id: "UFM0UL2GG", name: "claire.grooby", team: "experience" },
   { id: "U029C4B5Z", name: "mario", team: "experience" },
   { id: "UGWEUTNH5", name: "Izzy", team: "experience" },
-  { id: "U15HUNCRJ", name: "Sam McKenna (Tue-Fri)", team: "experience" }
+  { id: "U15HUNCRJ", name: "Sam McKenna (Tue-Fri)", team: "experience" },
+  { id: "UCU3DM9C1", name: "madlep", team: "discover" }
 ]
 
 function getChickens(day, team) {
