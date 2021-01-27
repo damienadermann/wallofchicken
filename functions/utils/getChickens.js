@@ -17,7 +17,7 @@ const potentialChickens = [
   { id: "U027CLUME", name: "gstamp", team: "mercury" },
   { id: "U02DERN4E", name: "khayman", team: "artemis" },
   { id: "U0274DF37", name: "asellitt", team: "artemis" },
-  { id: "U44G2GD4M", name: "Heidi.k", team: "discover" },
+  { id: "UU4E73JCD", name: "Heidi.k", team: "discover" },
   { id: "U07271PS5", name: "prasanna", team: "discover" },
   { id: "U0G1LM222", name: "stacey" , team: "athena"},
   { id: "U1SG7A284", name: "bakes", team: "mercury" },
@@ -39,7 +39,7 @@ const potentialChickens = [
   { id: "U029C4B5Z", name: "mario", team: "experience" },
   { id: "UGWEUTNH5", name: "Izzy", team: "experience" },
   { id: "U15HUNCRJ", name: "Sam McKenna (Tue-Fri)", team: "experience" },
-  { id: "UCU3DM9C1", name: "madlep", team: "discover" }
+  { id: "U027QM5S1", name: "madlep", team: "discover" }
 ]
 
 function getChickens(day, team) {
