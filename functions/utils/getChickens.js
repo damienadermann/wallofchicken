@@ -39,7 +39,8 @@ const potentialChickens = [
   { id: "U029C4B5Z", name: "mario", team: "experience" },
   { id: "UGWEUTNH5", name: "Izzy", team: "experience" },
   { id: "U15HUNCRJ", name: "Sam McKenna (Tue-Fri)", team: "experience" },
-  { id: "U027QM5S1", name: "madlep", team: "discover" }
+  { id: "U027QM5S1", name: "madlep", team: "discover" },
+  { id: "U1D5E8R6K", name: "pawel.galazka", team: "athena" }
 ]
 
 function getChickens(day, team) {
