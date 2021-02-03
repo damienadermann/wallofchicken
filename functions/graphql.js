@@ -19,10 +19,11 @@ const typeDefs = gql`
   enum Team {
     Elements
     Artemis
-    Apollo
+    Athena
+    Discover
     Gemini
     Mercury
-    Thrive
+    Experience
   }
 
   type Query {

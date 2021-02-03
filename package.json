@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/damienadermann/wallofchicken.git"
+    "url": "git+https://github.com/gbakernet/wallofchicken.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/damienadermann/wallofchicken/issues"
+    "url": "https://github.com/gbakernet/wallofchicken/issues"
   },
-  "homepage": "https://github.com/damienadermann/wallofchicken#readme",
+  "homepage": "https://github.com/gbakernet/wallofchicken#readme",
   "devDependencies": {
     "apollo-server-lambda": "^2.5.0",
     "bufferutil": "^4.0.1",
