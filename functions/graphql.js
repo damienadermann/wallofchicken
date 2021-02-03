@@ -1,5 +1,6 @@
 const { ApolloServer, gql } = require("apollo-server-lambda")
-const getChickens = require("./utils/getChickens")
+const selectChickens = require("./utils/selectChickens")
+const potentialChickens = require("./utils/potentialChickens")
 
 const typeDefs = gql`
   type Chicken {
@@ -52,19 +53,19 @@ const resolvers = {
     chickens: (parent, args) => {
       const { day, team } = args
       const dayIndex = whichDay(day)
-      return getChickens(dayIndex, team)
-    }
-  }
+      return selectChickens(potentialChickens, dayIndex, team)
+    },
+  },
 }
 
 const server = new ApolloServer({
   typeDefs,
-  resolvers
+  resolvers,
 })
 
 exports.handler = server.createHandler({
   cors: {
     origin: "*",
-    allowedHeaders: "*"
-  }
+    allowedHeaders: "*",
+  },
 })
