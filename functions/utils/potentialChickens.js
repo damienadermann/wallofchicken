@@ -27,3 +27,5 @@ const potentialChickens = [
   { id: "U027QM5S1", name: "madlep", team: "discover" },
   { id: "U1D5E8R6K", name: "pawel.galazka", team: "athena" },
 ]
+
+module.exports = potentialChickens
