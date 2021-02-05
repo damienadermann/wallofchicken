@@ -4,7 +4,7 @@
   "description": "Choses a new team member each day to run standup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "netlify dev --live",
     "build": "netlify-lambda build functions"
   },
@@ -28,5 +28,9 @@
     "netlify-lambda": "^1.4.7",
     "seedrandom": "^3.0.3",
     "utf-8-validate": "^5.0.2"
+  },
+  "dependencies": {
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
   }
 }
