@@ -21,6 +21,7 @@ const potentialChickens = [
   { id: "U0286USDZ", name: "riley", team: "experience" },
   { id: "U0K8Z1KD1", name: "kelle", team: "experience" },
   { id: "UFM0UL2GG", name: "claire.grooby", team: "experience" },
+  { id: "U02BLQE2B", name: "matter", team: "experience" },
   { id: "U029C4B5Z", name: "mario", team: "experience" },
   { id: "UGWEUTNH5", name: "Izzy", team: "experience" },
   { id: "U15HUNCRJ", name: "Sam McKenna (Tue-Fri)", team: "experience" },
