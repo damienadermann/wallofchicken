@@ -13,7 +13,6 @@ const potentialChickens = [
   { id: "UEAR25K88", name: "amanda.varella", team: "artemis" },
   { id: "UF72FC073", name: "Viv", team: "discover" },
   { id: "U025K202K", name: "notahat", team: "mercury" },
-  { id: "U9NRV08SZ", name: "daniel.budden", team: "athena" },
   { id: "U639C9S0H", name: "oliver.diestel", team: "athena" },
   { id: "UDJU1AL0K", name: "zoltan.toth", team: "athena" },
   { id: "U8G3NFUMD", name: "emily.koop", team: "athena" },
