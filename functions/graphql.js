@@ -19,7 +19,7 @@ const typeDefs = gql`
   enum Team {
     Elements
     Artemis
-    Athena
+    Attract
     Discover
     Gemini
     Mercury
