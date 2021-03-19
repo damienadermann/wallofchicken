@@ -26,6 +26,8 @@ const potentialChickens = [
   { id: "U15HUNCRJ", name: "Sam McKenna (Tue-Fri)", team: "experience" },
   { id: "U027QM5S1", name: "madlep", team: "discover" },
   { id: "U1D5E8R6K", name: "pawel.galazka", team: "attract" },
+  { id: "UEAUU2F6D", name: "lucascaton", team: "attract" },
+  { id: "U01PNQK0XGX", name: "raf", team: "attract" },
 ]
 
 module.exports = potentialChickens
