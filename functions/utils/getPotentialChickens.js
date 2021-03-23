@@ -45,7 +45,7 @@ const setCache = (item) => {
 }
 
 const getPotentialChickens = async () => {
-  const { item } = cache
+  const { item } = cache || {}
   if (item) {
     checkExpiry()
     return item
