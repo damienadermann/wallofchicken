@@ -1,5 +1,3 @@
-require("dotenv").config()
-
 const selectChickens = require("./utils/selectChickens")
 const getPotentialChickens = require("./utils/getPotentialChickens")
 

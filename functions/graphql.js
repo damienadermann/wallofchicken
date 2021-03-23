@@ -1,5 +1,3 @@
-require("dotenv").config()
-
 const { ApolloServer, gql } = require("apollo-server-lambda")
 const selectChickens = require("./utils/selectChickens")
 const getPotentialChickens = require("./utils/getPotentialChickens")
