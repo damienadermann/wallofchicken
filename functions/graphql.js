@@ -1,6 +1,8 @@
+require("dotenv").config()
+
 const { ApolloServer, gql } = require("apollo-server-lambda")
 const selectChickens = require("./utils/selectChickens")
-const potentialChickens = require("./utils/potentialChickens")
+const getPotentialChickens = require("./utils/getPotentialChickens")
 
 const typeDefs = gql`
   type Chicken {
@@ -51,9 +53,10 @@ function whichDay(day) {
 // Provide resolver functions for your schema fields
 const resolvers = {
   Query: {
-    chickens: (parent, args) => {
+    chickens: async (parent, args) => {
       const { day, team } = args
       const dayIndex = whichDay(day)
+      const potentialChickens = await getPotentialChickens()
       return selectChickens(potentialChickens, dayIndex, team)
     },
   },
