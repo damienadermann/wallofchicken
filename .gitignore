@@ -1,3 +1,6 @@
 .netlify
 node_modules
 built-lambda
+.env
+creds.json
+*.csv

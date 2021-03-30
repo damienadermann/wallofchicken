@@ -1,12 +1,13 @@
 const selectChickens = require("./utils/selectChickens")
-const potentialChickens = require("./utils/potentialChickens")
+const getPotentialChickens = require("./utils/getPotentialChickens")
 
 const TODAY = undefined
 
-exports.handler = function (event, context, callback) {
+exports.handler = async function (event, context) {
   const { team } = event.queryStringParameters
+  const potentialChickens = await getPotentialChickens()
   const chickens = selectChickens(potentialChickens, TODAY, team)
-  callback(null, {
+  return {
     statusCode: 200,
     body: JSON.stringify(
       {
@@ -16,5 +17,5 @@ exports.handler = function (event, context, callback) {
       null,
       2
     ),
-  })
+  }
 }
