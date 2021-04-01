@@ -3,16 +3,18 @@ const { GoogleSpreadsheet } = require("google-spreadsheet")
 const ttl = 1000 * 60 * 2
 let cache
 
-const getRows = async () => {
+const getRowsAndRandoms = async () => {
   const doc = new GoogleSpreadsheet(process.env.GOOGLE_SPREADSHEET_ID)
   await doc.useServiceAccountAuth({
     client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
     private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n\\n/g, "\n"),
   })
   await doc.loadInfo()
-  const sheet = doc.sheetsByIndex[0]
-  const rows = await sheet.getRows()
-  return rows
+  const chickenSheet = doc.sheetsByIndex[0]
+  const chickenRows = await chickenSheet.getRows()
+  const randomsSheet = doc.sheetsByIndex[1]
+  const randomsRows = await randomsSheet.getRows()
+  return [chickenRows, randomsRows]
 }
 
 const adaptRows = (rows) => {
@@ -28,6 +30,14 @@ const adaptRows = (rows) => {
     }
   }
   return potentialChickens
+}
+
+const adaptRandoms = (rows) => {
+  const seeds = []
+  for (const row of rows) {
+    seeds.push(row.seed)
+  }
+  return seeds
 }
 
 const checkExpiry = () => {
@@ -50,10 +60,12 @@ const getPotentialChickens = async () => {
     checkExpiry()
     return item
   }
-  const rows = await getRows()
+  const [rows, randoms] = await getRowsAndRandoms()
   const potentialChickens = adaptRows(rows)
-  setCache(potentialChickens)
-  return potentialChickens
+  const seeds = adaptRandoms(randoms)
+  const newItem = { potentialChickens, seeds }
+  setCache(newItem)
+  return newItem
 }
 
 module.exports = getPotentialChickens

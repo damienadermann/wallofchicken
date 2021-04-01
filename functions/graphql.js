@@ -1,5 +1,6 @@
 const { ApolloServer, gql } = require("apollo-server-lambda")
 const selectChickens = require("./utils/selectChickens")
+const getSeedOffset = require("./utils/getSeedOffset")
 const getPotentialChickens = require("./utils/getPotentialChickens")
 
 const typeDefs = gql`
@@ -54,8 +55,10 @@ const resolvers = {
     chickens: async (parent, args) => {
       const { day, team } = args
       const dayIndex = whichDay(day)
-      const potentialChickens = await getPotentialChickens()
-      return selectChickens(potentialChickens, dayIndex, team)
+      const { potentialChickens, seeds } = await getPotentialChickens()
+      const seedIndex = getSeedOffset(dayIndex)
+      const chickens = selectChickens(potentialChickens, seeds[seedIndex], team)
+      return chickens
     },
   },
 }
